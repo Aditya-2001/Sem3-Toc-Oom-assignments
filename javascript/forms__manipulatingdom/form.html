@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORM</title>
+    <script type="text/javascript" src="form.js"></script>
+</head>
+
+<body>
+    <form action="./reference.html" target="_blank" method="POST" autocomplete="on" onsubmit="return check()">
+        <label name="name">Enter name:</label>
+        <input type="text" name="name" id="name" placeholder="aditya">
+        <br>
+        <input type="submit" onclick="load()">
+    </form>
+
+    <button type="button" onclick="addItem()">Add Item</button>
+    <br>
+    <div id="append">
+
+    </div>
+    <br>
+    <button type="button" onclick="Remove()">Remove Item</button>
+</body>
+
+</html>

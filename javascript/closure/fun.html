@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Pig Game</title>
+        <script src="PigGame.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <br>
+        <div style="margin-left: 43%;">
+            <button type="button" class="btn btn-secondary" onclick="duoGame()">Press this button to start Pig game</button>
+        </div>
+        <br>
+        <div style="margin-left: 43%;">
+            <br><br>
+            <label>Player 1:</label>
+            <label class="btn btn-success" id="Player1">0</label>
+            <label>Player 2:</label>
+            <label class="btn btn-success" id="Player2">0</label>
+        </div>
+        <br><br>
+        <div style="text-align: center;">
+            <label>Temp Score:</label>
+            <label type="button" class="btn btn-primary" id="tempScore">0</label>
+        </div>
+        <br><br>
+        <div style="text-align: center;">
+            <label>Dice Score:</label>
+            <label class="btn btn-danger" id="diceScore">0</label>
+        </div>
+        <br><br>
+        <div style="margin-left: 46%;">
+            <button type="button" class="btn btn-info gameButton" id="rollDice" onclick="rollDice()" disabled>Roll Dice</button>
+            <button type="button" class="btn btn-warning gameButton" id="passTurn" onclick="rollBack()" disabled>Pass Turn</button>
+        </div>
+    </body>
+</html>

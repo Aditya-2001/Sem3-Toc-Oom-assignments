@@ -1,0 +1,6 @@
+S aAa
+A bAb
+A d
+A BBC
+B c
+C b
